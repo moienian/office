@@ -1,0 +1,9 @@
+{
+  "name": "office",
+  "version": "1.0.0",
+  "description": "The automation system for office",
+  "main": "index.js",
+  "repository": "git@gitlab.com:moienian/office.git",
+  "author": "Mohammad Moien <mnmoienian@gmail.com>",
+  "license": "MIT"
+}
