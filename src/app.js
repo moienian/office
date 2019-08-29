@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const template = <p>chetori?</p>;
-const root = document.getElementById("root");
+import AppRouter from "./routers/AppRouter";
 
-ReactDOM.render(template, root);
+const jsx = <AppRouter />;
+
+ReactDOM.render(jsx, root);
