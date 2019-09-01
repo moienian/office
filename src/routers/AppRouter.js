@@ -1,11 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import DashboardPage from "../components/DashboardPage";
 
-const AppRoter = () => {
+const AppRouter = () => (
   <Router>
-    <Route path="/" component={DashboardPage} exact />
-  </Router>;
-};
+    <Switch>
+      <Route path="/" component={DashboardPage} exact={true} />
+    </Switch>
+  </Router>
+);
 
-export default AppRoter;
+export default AppRouter;
