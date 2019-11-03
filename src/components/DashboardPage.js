@@ -19,7 +19,7 @@ class DashboardPage extends React.Component {
       <div>
         <table>
           <thead>
-            <tr>
+            <tr className="thead">
               <th>Project Number</th>
               <th>Customer Name</th>
               <th>Last Update</th>
