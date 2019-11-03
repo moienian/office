@@ -9,5 +9,5 @@ afterEach(() => {
 
 test("render DashboardPage component correctly", () => {
   const { getByText } = render(<DashboardPage />);
-  expect(getByText("this is from dashboard page!")).toBeInTheDocument();
+  expect(getByText("Ali Zamani")).toBeInTheDocument();
 });
