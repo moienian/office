@@ -17,24 +17,22 @@ class DashboardPage extends React.Component {
   render() {
     return (
       <div>
-        <table>
+        <table className="project-table">
           <thead>
             <tr className="thead">
-              <th>Project Number</th>
-              <th>Customer Name</th>
-              <th>Last Update</th>
+              <th className="row-number">Project Number</th>
+              <th className="row-name">Customer Name</th>
+              <th className="row-date">Last Update</th>
             </tr>
           </thead>
           <tbody>
-            {this.state.map(p => {
-              return (
-                <tr>
-                  <td>{p.projectNumber}</td>
-                  <td>{p.customerName}</td>
-                  <td>{p.lastUpdate}</td>
-                </tr>
-              );
-            })}
+            {this.state.map(p => (
+              <tr>
+                <td>{p.projectNumber}</td>
+                <td>{p.customerName}</td>
+                <td>{p.lastUpdate}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

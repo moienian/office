@@ -1,4 +1,32 @@
-.thead {
-  background-color: black;
-  color: white;
+.project-table {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+  border: 1px solid;
+  border-collapse: collapse;
+
+  td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid;
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background-color: #cccccc;
+      }
+    }
+  }
+}
+
+.row-number {
+  width: 20%;
+}
+.row-name {
+  width: 50%;
+}
+.row-date {
+  width: 30%;
 }
