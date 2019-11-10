@@ -3,11 +3,13 @@ import React from "react";
 class DashboardPage extends React.Component {
   state = [
     {
+      id: "1",
       projectNumber: "MA-172",
       customerName: "Ali Zamani",
       lastUpdate: "1397/12/25"
     },
     {
+      id: "2",
       projectNumber: "MN-25",
       customerName: "Mohsen Sattari",
       lastUpdate: "1398/06/04"
@@ -27,7 +29,7 @@ class DashboardPage extends React.Component {
           </thead>
           <tbody>
             {this.state.map(p => (
-              <tr>
+              <tr key={p.id}>
                 <td>{p.projectNumber}</td>
                 <td>{p.customerName}</td>
                 <td>{p.lastUpdate}</td>
