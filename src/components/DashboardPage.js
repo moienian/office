@@ -1,20 +1,22 @@
 import React from "react";
 
 class DashboardPage extends React.Component {
-  state = [
-    {
-      id: "1",
-      projectNumber: "MA-172",
-      customerName: "Ali Zamani",
-      lastUpdate: "1397/12/25"
-    },
-    {
-      id: "2",
-      projectNumber: "MN-25",
-      customerName: "Mohsen Sattari",
-      lastUpdate: "1398/06/04"
-    }
-  ];
+  state = {
+    projects: [
+      {
+        id: "1",
+        projectNumber: "MA-172",
+        customerName: "Ali Zamani",
+        lastUpdate: "1397/12/25"
+      },
+      {
+        id: "2",
+        projectNumber: "MN-25",
+        customerName: "Mohsen Sattari",
+        lastUpdate: "1398/06/04"
+      }
+    ]
+  };
 
   render() {
     return (
@@ -28,7 +30,7 @@ class DashboardPage extends React.Component {
             </tr>
           </thead>
           <tbody>
-            {this.state.map(p => (
+            {this.state.projects.map(p => (
               <tr key={p.id}>
                 <td>{p.projectNumber}</td>
                 <td>{p.customerName}</td>
